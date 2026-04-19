@@ -44,21 +44,17 @@ Evaluation Metrics:
 Our analysis revealed that the "optimal" operator is highly dependent on the physics of the modality:
 
 | Modality   | Top Operator | FOM Score | Clinical Context |
+
 | CT         | Sobel        | 0.92      | High contrast makes simple gradient kernels highly accurate.|
+
 | MRI        | Kirsch       | 0.83      | 8-way compass kernels excel at complex cortical folds.|
+
 | Ultrasound | Roberts      | 0.80      | Smaller 2 x 2 kernels are more robust to speckle noise.|
 
 🖼 Visualization
 
 A comparison of operator responses on a Brain MRI slice:
 
-![Normalized MRI Slice](results/plots/normalized_raw_MRI_slice.png)
-
-![ROI Masking](results/plots/tissue_mask.png)
-
-![Operators Comparison](results/plots/operators.png)
-
-![Error Map](results/plots/error_map.png)
 
 🚀 Getting Started
 
