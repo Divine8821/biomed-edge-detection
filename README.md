@@ -61,16 +61,43 @@ Our analysis revealed that the "optimal" operator is highly dependent on the phy
 
 🖼 Visualization
 
-A comparison of operator responses on a Brain MRI slice:
+1.A comparison of operator responses on a Brain MRI slice:
+
+a) Normalized Raw MRI Slice
 
 ![Normalized MRI Slice](docs/normalized_raw_MRI_slice.png)
 
+b) ROI Masking
+
 ![ROI Masking](docs/tissue_mask.png)
+
+c) Operator Comparison
 
 ![Operators Comparison](docs/operators.png)
 
+d) Error Map
+
 ![Error Map](docs/error_map.png)
 
+2.A comparison of operator responses on a Brain CT slice:
+
+a) Normalized + ROI Mask + Sobel Edge Response
+
+![Normalized CT Slice](docs/CT_output.png)
+
+b) Operator Comparison
+
+![Operators Comparison](docs/ct_all_operators.png)
+
+3.A comparison of operator responses on a Womb Ultrasound Image:
+
+a) Raw Image + ROI Mask + Edge Map
+
+![Normalized Ultrasound Image](docs/ultrasound.png)
+
+b) Operator Comparison
+
+![Operators Comparison](docs/ultrasound_all_operators.png)
 
 🚀 Getting Started
 
