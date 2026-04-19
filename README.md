@@ -73,7 +73,7 @@ b) ROI Masking
 
 c) Operator Comparison
 
-<img src="docs/operators.png" width="1200" alt="MRI Operators Comparison">
+![MRI Operator Comparison](docs/mri_all_operators.png)  
 
 d) Error Map
 
@@ -87,7 +87,7 @@ a) Normalized + ROI Mask + Sobel Edge Response
 
 b) Operator Comparison
 
-<img src="docs/ct_all_operators.png" width="1200" alt="CT Operators Comparison">
+![CT Operator Comparison](docs/ct_all_operators.png) 
 
 3.A comparison of operator responses on a Womb Ultrasound Image:
 
@@ -97,7 +97,7 @@ a) Raw Image + ROI Mask + Edge Map
 
 b) Operator Comparison
 
-<img src="docs/ultrasound_all_operators.png" width="1200" alt="Ultrasound Operators Comparison">
+![Ultrasound Operator Comparison](docs/ultrasound_all_operators.png)  
 
 🚀 Getting Started
 
