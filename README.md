@@ -16,13 +16,21 @@ The goal is to determine which mathematical kernels are most robust to the uniqu
 
 biomed-edge-detection/
 ├── data/               # Raw DICOM/NIfTI and standardized .npy slices
+
 ├── src/
+
 │   ├── data_prep.py    # Unified pipeline for MRI volumes and CT/US slices
+
 │   ├── operators.py    # Implementation of 7 edge detection kernels
+
 │   ├── metrics.py      # Pratt's Figure of Merit (FOM) & ROI-Gated PSNR
+
 │   └── loaders.py      # Standardized data streaming
+
 ├── notebooks/          # Step-by-step visualization of the image pipeline
+
 ├── results/            # Quantitative CSV summaries and comparison plots
+
 └── main.py             # Analysis orchestrator
 
 
@@ -44,21 +52,24 @@ Evaluation Metrics:
 Our analysis revealed that the "optimal" operator is highly dependent on the physics of the modality:
 
 | Modality   | Top Operator | FOM Score | Clinical Context |
+
 | CT         | Sobel        | 0.92      | High contrast makes simple gradient kernels highly accurate.|
+
 | MRI        | Kirsch       | 0.83      | 8-way compass kernels excel at complex cortical folds.|
+
 | Ultrasound | Roberts      | 0.80      | Smaller 2 x 2 kernels are more robust to speckle noise.|
 
 🖼 Visualization
 
 A comparison of operator responses on a Brain MRI slice:
 
-![Normalized MRI Slice](results/plots/normalized_raw_MRI_slice.png)
+![Normalized MRI Slice](docs/normalized_raw_MRI_slice.png)
 
-![ROI Masking](results/plots/tissue_mask.png)
+![ROI Masking](docs/tissue_mask.png)
 
-![Operators Comparison](results/plots/operators.png)
+![Operators Comparison](docs/operators.png)
 
-![Error Map](results/plots/error_map.png)
+![Error Map](docs/error_map.png)
 
 🚀 Getting Started
 
