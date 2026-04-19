@@ -71,6 +71,7 @@ A comparison of operator responses on a Brain MRI slice:
 
 ![Error Map](docs/error_map.png)
 
+
 🚀 Getting Started
 
 1. Prepare Data: Place raw NIfTI/DICOM/JPG files in `data/raw/`.
